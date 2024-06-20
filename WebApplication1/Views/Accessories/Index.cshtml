@@ -1,0 +1,40 @@
+﻿@model AccessoriesModel[]
+
+<div class="card-group">
+    <div class="card">
+        <img src="https://images.shafastatic.net/1349436061" class="card-img-top" style="width: 100%; height: 256px; object-fit: cover;" alt="eco-white blue">
+        <div class="card-body">
+            <h5 class="card-title">@Model[0].Name</h5>
+            <p class="card-text">
+                Скринька для прикрас призначена для зберігання ювелірних виробів, біжутерії та аксесуарів. Скринька має 2-ярусну структуру, що забезпечує велику кількість відділень та осередків для зберігання різних речей.<br>
+
+                ➤ Верхній ярус має відділи для компактного зберігання кілець, сережок, брошок, ланцюжків, снійків та прикрас малого розміру, а також різноманітних аксесуарів.<br>
+
+                ➤ Нижній ярус являє собою великий ящик на 8 осередків для зберігання годинників або браслетів.<br>
+
+                ➤Внутрішня сторона кришки скриньки призначена для зберігання ланцюжків і кольє - велика кількість гачків для їх розміщення знаходиться у верхній частині кришки, в... читати далі<br>
+            </p>
+            <p class="card-text"><small class="text-body-secondary">@Model[0].Id</small></p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://images.shafastatic.net/1346544840" class="card-img-top" style="width: 100%; height: 256px; object-fit: cover;" alt="emerald lock">
+        <div class="card-body">
+            <h5 class="card-title">@Model[1].Name</h5>
+            <p class="card-text">➤ Нижній ярус являє собою великий ящик на 8 осередків для зберігання годинників або браслетів.<br></p>
+            <p class="card-text"><small class="text-body-secondary">@Model[1].Id</small></p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://images.shafastatic.net/1253372581" class="card-img-top" style="width: 100%; height: 256px; object-fit: cover;" alt="vlando">
+        <div class="card-body">
+            <h5 class="card-title">@Model[2].Name</h5>
+            <p class="card-text">Органайзер для зберігання косметики – чудовий помічник у створенні ідеального макіяжу. З його допомогою ви не тільки зможете скоротити час пошуку потрібних продуктів та інструментів, але й підтримувати порядок та чистоту на вашому туалетному столику, у ванній кімнаті, на підвіконні та інших поверхнях.Органайзер для зберігання косметики – чудовий помічник у створенні ідеального макіяжу. З його допомогою ви не тільки зможете скоротити час пошуку потрібних продуктів та інструментів, але й підтримувати порядок та чистоту на вашому туалетному столику, у ванній кімнаті, на підвіконні та інших поверхнях.</p>
+            <p class="card-text"><small class="text-body-secondary">@Model[1].Id</small></p>
+        </div>
+    </div>
+</div>
+<a type="button" class="btn btn-light"
+   style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;" asp-action="Index" asp-route-accessoriesId="@Model[2].Id">
+    Apple
+</a>
